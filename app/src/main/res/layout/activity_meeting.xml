@@ -1,0 +1,182 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/loginbkg_1"
+    android:hapticFeedbackEnabled="true">
+
+    <!-- Fixed ImageView at the top -->
+    <ImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Scrollable content starts below the ImageView -->
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewHeader"
+        android:layout_marginTop="16dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Meeting Invitation"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting Title"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMeetingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter meeting title"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date (e.g. 2024-09-20)"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/editTextMeetingTitle"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMeetingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter date"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/editTextMeetingTitle"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time (e.g. 10:00 AM)"
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:layout_below="@id/editTextMeetingDate"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMeetingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter time"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/editTextMeetingDate"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting Location"
+                android:textSize="18sp"
+                android:textColor="#555"
+                android:layout_below="@id/editTextMeetingTime"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMeetingLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter meeting Location"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_below="@id/editTextMeetingTime"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Members' Emails (comma-separated)"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_below="@id/editTextMeetingLoc"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter emails"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/editTextMeetingLoc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting Description"
+                android:textSize="18sp"
+                android:textColor="#555"
+                android:layout_below="@id/editTextMembers"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextMettingDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter meeting title"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="#333"
+                android:layout_below="@id/editTextMembers"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/buttonSendInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextMettingDescription"
+                android:text="Send Invite"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

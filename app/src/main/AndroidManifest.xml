@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.localcrimeeye">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lce_logo"
+        android:label="ForumCrimeEye"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LocalCrimeEye">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAqTmSNJ9pEv7iGagdppYwfN-pb0hI9nHE"/>
+
+        <!-- Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FirebaseBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".LocateActivity"/>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".activity_main" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".ReportedActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CardActivity"/>
+        <activity android:name=".MeetingActivity"/>
+        <activity android:name=".DevelopersActivity"/>
+        <activity android:name=".AddMemberActivity"/>
+        <activity android:name=".SettingsActivity"/>
+
+    </application>
+
+</manifest>
+

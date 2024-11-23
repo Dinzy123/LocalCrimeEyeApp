@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "946726991522",
+    "firebase_url": "https://signlce-default-rtdb.firebaseio.com",
+    "project_id": "signlce",
+    "storage_bucket": "signlce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946726991522:android:d861a57eb0177aaf0c89fb",
+        "android_client_info": {
+          "package_name": "com.example.localcrimeeye"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoYPpiewdfAt3s7gMflVOIT4ps62ImTvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

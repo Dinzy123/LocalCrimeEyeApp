@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LocalCrimeEye</string>
+    <string name="login">Login</string>
+    <string name="not_yet_registered_sign_up">Not yet registered? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="person">Person</string>
+    <string name="captain_pillay">Captain Pillay</string>
+    <string name="hi_sanele">Hi, Sanele</string>
+
+    <string-array name="meeting_titles">
+        <item>Project Update</item>
+        <item>Client Meeting</item>
+        <item>Team Sync</item>
+        <item>Brainstorming Session</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
